@@ -1,6 +1,6 @@
 const { boolean } = require("webidl-conversions");
 
-const mongoose = requre("mongoose");
+const mongoose = require("mongoose");
 
 const userSchema = mongoose.Schema(
   {
@@ -18,7 +18,7 @@ const userSchema = mongoose.Schema(
       required: [true, "Please add a password"],
     },
     isAdmin: {
-      type: boolean,
+      type: Boolean,
       required: true,
       default: false,
     },
